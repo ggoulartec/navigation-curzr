@@ -60,6 +60,7 @@ class CircleAndDot {
 
         if (event.target.localName === 'button' ||
             event.target.localName === 'a' ||
+            event.target.localName === 'img' ||
             event.target.onclick !== null ||
             event.target.className.includes('curzr-hover')) {
             this.hover()

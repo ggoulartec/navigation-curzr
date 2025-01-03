@@ -9,8 +9,8 @@ class CircleAndDot {
             distance: 0,
             pointerX: 0,
             pointerY: 0,
-        },
-            this.previousPointerX = 0
+        }
+        this.previousPointerX = 0
         this.previousPointerY = 0
         this.angle = 0
         this.previousAngle = 0
@@ -78,7 +78,7 @@ class CircleAndDot {
         this.previousAngle = this.angle
 
         if (position.distanceX <= 0 && position.distanceY >= 0) {
-            this.angle = 90 - unsortedAngle + 0
+            this.angle = 90 - unsortedAngle
         } else if (position.distanceX < 0 && position.distanceY < 0) {
             this.angle = unsortedAngle + 90
         } else if (position.distanceX >= 0 && position.distanceY <= 0) {
